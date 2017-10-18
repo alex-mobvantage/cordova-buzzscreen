@@ -1,0 +1,23 @@
+{
+  "name": "cordova-buzzscreen",
+  "version": "0.0.1",
+  "description": "Cordova plugin for BuzzScreen SDK",
+  "cordova": {
+    "id": "cordova-buzzscreen",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "buzzscreen",
+    "buzzvil",
+    "lockscreen",
+    "sdk"
+  ],
+  "author": {
+    "name": "Alexander Kawrykow"
+  },
+  "license": "MIT"
+}

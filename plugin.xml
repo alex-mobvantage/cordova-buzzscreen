@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="M2M"
+  version="0.0.1">
+      
+  <name>BuzzScreen SDK</name>
+  <description>Cordova plugin for the BuzzScreen SDK</description>
+  <author>Alexander Kawrykow</author>
+  <license>MIT</license>
+  <keywords>buzzscreen,buzzvil,lockscreen,sdk</keywords>
+
+  <engines>
+    <engine name="cordova" version=">=3.0" />
+  </engines>
+
+  <js-module src="www/buzzscreen.js" name="buzzscreen">
+    <clobbers target="BuzzScreen" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="BuzzScreen">
+        <param name="android-package" value="com.buzzvil.cordova.BuzzScreenPlugin" />
+      </feature>
+    </config-file>
+			
+    <config-file target="AndroidManifest.xml" parent="/*">
+      <uses-permission android:name="android.permission.INTERNET" />
+    </config-file>
+
+    <source-file
+      src="src/android/BuzzScreenPlugin.java"
+      target-dir="src/com/buzzvil/cordova" />
+    
+    <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
+    
+  </platform>
+</plugin>
