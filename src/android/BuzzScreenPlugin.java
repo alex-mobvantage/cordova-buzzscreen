@@ -1,4 +1,4 @@
-package com.buzzvil.cordova;
+package com.buzzvil.buzzscreen.sdk.cordova;
 
 import android.util.Log;
 
@@ -11,7 +11,7 @@ import org.json.JSONObject;
 
 import android.content.Context;
 
-import com.buzzvil.buzzscreen.BuzzScreen;
+import com.buzzvil.buzzscreen.sdk.BuzzScreen;
 
 public class BuzzScreenPlugin extends CordovaPlugin {
     private static final String TAG = "BuzzScreen";

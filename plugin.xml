@@ -22,7 +22,7 @@
   <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="BuzzScreen">
-        <param name="android-package" value="com.buzzvil.cordova.BuzzScreenPlugin" />
+        <param name="android-package" value="com.buzzvil.buzzscreen.sdk.cordova.BuzzScreenPlugin" />
       </feature>
     </config-file>
 			
@@ -38,7 +38,7 @@
 
     <source-file
       src="src/android/BuzzScreenPlugin.java"
-      target-dir="src/com/buzzvil/cordova" />
+      target-dir="src/com/buzzvil/buzzscreen/sdk/cordova" />
     
     <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
     
