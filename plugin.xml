@@ -28,6 +28,12 @@
 			
     <config-file target="AndroidManifest.xml" parent="/*">
       <uses-permission android:name="android.permission.INTERNET" />
+      <meta-data
+        android:name="app_license"
+        android:value="@string/buzzscreen_app_license" />
+      <meta-data
+        android:name="com.buzzvil.locker.mediation.baidu.plist"
+        android:value="@string/buzzscreen_plist" />
     </config-file>
 
     <source-file

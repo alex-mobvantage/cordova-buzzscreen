@@ -1,0 +1,10 @@
+repositories {
+    maven { url "https://dl.bintray.com/buzzvil/buzzscreen/" }
+    maven { url "http://dl.appnext.com/" }
+}
+
+dependencies {
+    compile 'com.buzzvil:buzzscreen:1.+'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.google.android.gms:play-services-location:8.4.0'
+}
