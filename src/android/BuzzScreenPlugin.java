@@ -16,7 +16,7 @@ import com.buzzvil.buzzscreen.sdk.BuzzScreen;
 public class BuzzScreenPlugin extends CordovaPlugin {
     private static final String TAG = "BuzzScreen";
 
-    private static final String ACTIVATE = "launch";
+    private static final String ACTIVATE = "activate";
     private static final String DEACTIVATE = "deactivate";
     private static final String LOGOUT = "logout";
     private static final String SET_USER_ID = "setUserId";
